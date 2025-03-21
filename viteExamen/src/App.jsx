@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
@@ -37,7 +38,7 @@ const App = () => {
   );
 
   return (
-    <div className="p-8">
+    <div className="container mt-5 center shadow-lg p-5">
       <h1 className="text-2xl font-bold mb-4">Lista de Productos</h1>
       
       <SearchComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -45,8 +46,8 @@ const App = () => {
       <table className="table-auto w-full border-collapse border border-gray-200">
         <thead>
           <tr>
-            <th className="border border-gray-300 p-2">Nombre</th>
-            <th className="border border-gray-300 p-2">Precio</th>
+            <th className="border border-gray-300 p-2 bg-gray-200">Nombre</th>
+            <th className="border border-gray-300 p-2 bg-gray-200">Precio</th>
             <th className="border border-gray-300 p-2">Categoría</th>
           </tr>
         </thead>

@@ -1,5 +1,6 @@
 // components/SearchComponent.jsx
 import React from 'react';
+import '../index.css';
 
 const SearchComponent = ({ searchTerm, setSearchTerm }) => {
     
@@ -9,7 +10,8 @@ const SearchComponent = ({ searchTerm, setSearchTerm }) => {
       placeholder="Buscar producto..."
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
-      className="border p-2 mb-4 w-full"
+      className="border p-2 w-100  bg-wite mb-4"
+
     />
   );
 };
